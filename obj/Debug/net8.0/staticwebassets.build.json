@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lavFFA8mEev0yi86gMDZ69LY8izZsHm0038O2rSszmA=",
+  "Hash": "ptiZ9PWSlsOpWehgZ6bOYg6g98VxEklo9MEe+g17wp4=",
   "Source": "RsDistributors",
   "BasePath": "_content/RsDistributors",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\wwwroot\\css\\site.css",
+      "SourceId": "RsDistributors",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\wwwroot\\",
+      "BasePath": "_content/RsDistributors",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
     {
       "Identity": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\wwwroot\\favicon.ico",
       "SourceId": "RsDistributors",
