@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\visio\\Desktop\\11111\\RsDistributors\\RsDistributors.csproj": {}
+    "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj": {}
   },
   "projects": {
-    "C:\\Users\\visio\\Desktop\\11111\\RsDistributors\\RsDistributors.csproj": {
+    "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\visio\\Desktop\\11111\\RsDistributors\\RsDistributors.csproj",
+        "projectUniqueName": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj",
         "projectName": "RsDistributors",
-        "projectPath": "C:\\Users\\visio\\Desktop\\11111\\RsDistributors\\RsDistributors.csproj",
+        "projectPath": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj",
         "packagesPath": "C:\\Users\\visio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\visio\\Desktop\\11111\\RsDistributors\\obj\\",
+        "outputPath": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\visio\\AppData\\Roaming\\NuGet\\NuGet.Config",
