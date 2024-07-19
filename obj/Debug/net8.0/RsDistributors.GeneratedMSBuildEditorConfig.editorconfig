@@ -18,6 +18,50 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Admin/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Admin/Seller.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2VsbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Admin/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Besto/BestoPage1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXEJlc3RvXEJlc3RvUGFnZTEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Besto/BestoPage2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXEJlc3RvXEJlc3RvUGFnZTIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Delmo/DelmoPage1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXERlbG1vXERlbG1vUGFnZTEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Delmo/DelmoPage2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXERlbG1vXERlbG1vUGFnZTIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Shared/_BestoSellerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9CZXN0b1NlbGxlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Shared/_DelmoSellerLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9EZWxtb1NlbGxlckxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
