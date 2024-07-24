@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2hvcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Admin/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,12 +50,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXEJlc3RvXEJlc3RvUGFnZTIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Besto/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXEJlc3RvXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Delmo/DelmoPage1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXERlbG1vXERlbG1vUGFnZTEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Delmo/DelmoPage2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXERlbG1vXERlbG1vUGFnZTIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Seller/Delmo/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VsbGVyXERlbG1vXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/Pages/Shared/_AdminLayout.cshtml]
