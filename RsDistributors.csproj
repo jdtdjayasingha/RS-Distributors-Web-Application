@@ -17,4 +17,8 @@
     <None Remove="wwwroot\lib\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Pages\_ViewImports.cshtml.cs" />
+  </ItemGroup>
+
 </Project>
