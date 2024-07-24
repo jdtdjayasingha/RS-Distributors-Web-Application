@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RsDistributors")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20287f0cf3b5b64d58a9f05f3478ac43ba6e2817")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19833a2e8e7a2b9acf4fe14486cef0282c6777dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("RsDistributors")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RsDistributors")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
