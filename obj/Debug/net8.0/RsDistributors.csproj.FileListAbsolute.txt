@@ -1,29 +1,58 @@
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\appsettings.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\RsDistributors.staticwebassets.runtime.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\RsDistributors.exe
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\RsDistributors.deps.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\RsDistributors.runtimeconfig.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\RsDistributors.dll
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\bin\Debug\net8.0\RsDistributors.pdb
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.AssemblyInfoInputs.cache
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.AssemblyInfo.cs
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.csproj.CoreCompileInputs.cache
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.RazorAssemblyInfo.cache
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.RazorAssemblyInfo.cs
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.sourcelink.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\staticwebassets\msbuild.RsDistributors.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\staticwebassets\msbuild.build.RsDistributors.props
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RsDistributors.props
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RsDistributors.props
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\scopedcss\bundle\RsDistributors.styles.css
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.dll
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\refint\RsDistributors.dll
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.pdb
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\RsDistributors.genruntimeconfig.cache
-C:\Users\visio\Documents\Settings\Git Hub\RS-Distributors-Web-Application\obj\Debug\net8.0\ref\RsDistributors.dll
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/appsettings.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.staticwebassets.runtime.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.exe
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.deps.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.runtimeconfig.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.dll
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.pdb
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.AssemblyInfoInputs.cache
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.AssemblyInfo.cs
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.csproj.CoreCompileInputs.cache
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.RazorAssemblyInfo.cache
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.RazorAssemblyInfo.cs
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.sourcelink.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.RsDistributors.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.build.RsDistributors.props
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RsDistributors.props
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RsDistributors.props
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/scopedcss/bundle/RsDistributors.styles.css
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.dll
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/refint/RsDistributors.dll
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.pdb
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.genruntimeconfig.cache
+C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/Debug/net8.0/ref/RsDistributors.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/appsettings.Development.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/appsettings.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.staticwebassets.runtime.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.deps.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.runtimeconfig.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/RsDistributors.pdb
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.AssemblyInfoInputs.cache
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.AssemblyInfo.cs
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.csproj.CoreCompileInputs.cache
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.MvcApplicationPartsAssemblyInfo.cache
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.RazorAssemblyInfo.cache
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.RazorAssemblyInfo.cs
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.sourcelink.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets.build.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets.development.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.RsDistributors.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.build.RsDistributors.props
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RsDistributors.props
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RsDistributors.props
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/scopedcss/bundle/RsDistributors.styles.css
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/refint/RsDistributors.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.pdb
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.genruntimeconfig.cache
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/ref/RsDistributors.dll
