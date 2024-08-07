@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
     },
     {
-      "Id": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RsDistributors.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RsDistributors.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RsDistributors.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.RsDistributors.props",
       "PackagePath": "build\\RsDistributors.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RsDistributors.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RsDistributors.props",
       "PackagePath": "buildMultiTargeting\\RsDistributors.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RsDistributors.props",
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RsDistributors.props",
       "PackagePath": "buildTransitive\\RsDistributors.props"
     }
   ],
