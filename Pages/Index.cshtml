@@ -3,19 +3,48 @@
 @{
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
 
-<a asp-page="Admin/Dashboard" class="btn btn-primary">Dashboard</a>
-<a asp-page="Admin/Product" class="btn btn-primary">Product</a>
-<a asp-page="Admin/Seller" class="btn btn-primary">Seller</a>
-<a asp-page="Admin/Shop" class="btn btn-primary">Shop</a>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>RS Distributors</title>
 
-<h3>Besto</h3>
+    <meta charset="UTF-8" />
+    <meta name="author" content="JD" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-<a asp-page="Seller/Besto/BestoPage1" class="btn btn-primary">BP1</a>
-<a asp-page="Seller/Besto/BestoPage2" class="btn btn-primary">BP2</a>
+<body style="background-color: white">
+    <div class="container">
+        <div class="row row-first"></div>
 
-<h3>Delmo</h3>
+        <div class="row mt-3">
 
-<a asp-page="Seller/Delmo/DelmoPage1" class="btn btn-primary">DP1</a>
-<a asp-page="Seller/Delmo/DelmoPage2" class="btn btn-primary">DP2</a>
+            <div class="col-md-4 mt-4">
+                <div class="content-login">
+                    <h1 class="text-danger text-singup logohidevisible">Sign Up</h1>
+                    <h1 class="text-danger text-singup logovisible">Rs Distributors</h1>
+
+                    <form>
+                        <div>
+                            <label class="form-label mt-3" for="EmailId">Email Address</label>
+                            <input type="email" class="form-control" id="emailLogin" placeholder="Enter your email" runat="server" required="required" />
+                        </div>
+
+                        <div>
+                            <label class="form-label mt-3" for="UserPasswordTb">Password</label>
+                            <input class="form-control" type="password" id="passwordLogin" placeholder="Enter your password" runat="server" required="required" />
+                        </div>
+
+                        <div>
+                            <asp:Button Class="btn btn-danger btn-log" runat="server" Text="Log In" ID="btnSaveLogin" OnClick="btnSaveLogin_Click" />
+                            <label id="InfoMsg" runat="server" class="my-2"></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
