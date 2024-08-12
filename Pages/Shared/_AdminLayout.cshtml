@@ -90,9 +90,35 @@
             <p class="loginFooterText">Powered By ©️ JD</p>
         </div>
 
+        <form id="form1" runat="server" >
+            <div>
+                
+                <button id="backbut" href="javascript:void(0)" class="hideclosebtn" onclick="closeNav()"></button>
+               
+                <asp:ContentPlaceHolder ID="AdminBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
 
-
-
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "75%";
+                document.getElementById("backbut").style.opacity = "0.5";
+                
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                 } else {
+                    x.style.display = "none";
+                }
+                var x = document.getElementById("backbut");
+                if (x.style.display === "block") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "block";
+                }
+             }
+        </script>
         @RenderBody()
     </body>
 </html>
