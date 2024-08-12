@@ -39,7 +39,11 @@
                     <input type="text" class="form-control" id="texPriceProduct" runat="server" placeholder="Per kilo or piece">
                 </div>
 
-           
+                <button type="submit" asp-page-handler="editBtnClick" class="btn btn-danger product-btn" id="editBtn">Edit</button>
+                <button type="submit" asp-page-handler="saveBtnClick" class="btn btn-danger product-btn" id="saveBtn">Save</button>
+                <button type="submit" asp-page-handler="deleteBtnClick" class="btn btn-danger product-btn" id="deleteBtn">Delete</button>
+
+                <label id="ErrMsg" runat="server" class="text-danger"></label>
             </div>
 
         </div>
