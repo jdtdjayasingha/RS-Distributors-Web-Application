@@ -46,6 +46,10 @@
                 <label id="ErrMsg" runat="server" class="text-danger"></label>
             </div>
 
+            <div class="col-lg-9 table-responsive">
+                <asp:GridView runat="server" class="table table-bordered table-hover" ID="gridViewProduct" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gridViewProduct_SelectedIndexChanged">
+                </asp:GridView>
+            </div>
         </div>
     </div>
 </asp:Content>
