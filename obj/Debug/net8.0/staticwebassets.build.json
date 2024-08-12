@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S1j5bNt3w5YkT/o5DKI1ycgyw+o4var3SRGHwxEzC8c=",
+  "Hash": "k2799Ydl8E1NmL6GuE73wj8xqK36CggFv4ySnORb/j4=",
   "Source": "RsDistributors",
   "BasePath": "_content/RsDistributors",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/css/site.css",
+      "Identity": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/css/sites.css",
       "SourceId": "RsDistributors",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/",
       "BasePath": "_content/RsDistributors",
-      "RelativePath": "css/site.css",
+      "RelativePath": "css/sites.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,7 +33,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot/css/sites.css"
     },
     {
       "Identity": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/favicon.ico",
