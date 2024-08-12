@@ -3,6 +3,10 @@
 @{
 }
 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="AdminBody" runat="server">
     <div class="container product-container">
         <div class="row"></div>
 
@@ -10,12 +14,34 @@
             <div class="col-lg-3">
                 <h3 class="product-details text-danger">Product Details</h3>
 
-  
+                <div class="mb-3">
+                    <label for="CategoryTb" class="form-label">Product Category</label>
+                    <div>
+                       <asp:DropDownList class="form-control" ID="droCategoryProduct" runat="server" >
+                           <asp:ListItem>Besto</asp:ListItem>
+                           <asp:ListItem>Delmo</asp:ListItem>
+                       </asp:DropDownList>
+                   </div>
+                </div>
 
+                <div class="mb-3">
+                    <label for="PNameTb" class="form-label">Product Name</label>
+                    <input id="NameProduct" type="text" class="form-control" runat="server"/>
+                </div>
 
+                <div class="mb-3" hidden>
+                    <label for="ProdQtyTb" class="form-label">Product Quantity</label>
+                    <input type="text" class="form-control" id="texQtyProduct" runat="server" value="1" ReadOnly="True">
+                </div>
+
+                <div class="mb-3">
+                    <label for="PriceTb" class="form-label">Product Price</label>
+                    <input type="text" class="form-control" id="texPriceProduct" runat="server" placeholder="Per kilo or piece">
+                </div>
 
            
             </div>
 
         </div>
     </div>
+</asp:Content>
