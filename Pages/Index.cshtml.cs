@@ -8,5 +8,10 @@ namespace RsDistributors.Pages
         public void OnGet()
         {
         }
+
+        public IActionResult OnPostBtnSaveLoginClick()
+        {
+            return RedirectToPage("/Admin/Product");
+        }
     }
 }
