@@ -5,46 +5,58 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>RS Distributors</title>
+<html>
+    <head>
+        <title>RS Distributors</title>
 
-    <meta charset="UTF-8" />
-    <meta name="author" content="JD" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="JD"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <link rel="icon" type="image/x-icon" href="~/lib/img/mainLogo.png"/>
 
-<body style="background-color: white">
-    <div class="container">
+        
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="~/js/bootstrap.bundle.min.js"></script>
+        <link href="~/css/sites.css" rel="stylesheet" />
+        
+    </head>
+
+    <body>
+        <div class="container">
         <div class="row row-first"></div>
 
-        <div class="row mt-3">
+            <div class="row mt-3">
+                <div class="col-md-1"></div>
 
-            <div class="col-md-4 mt-4">
-                <div class="content-login">
-                    <h1 class="text-danger text-singup logohidevisible">Sign Up</h1>
-                    <h1 class="text-danger text-singup logovisible">Rs Distributors</h1>
+                <div class="col-md-1"></div>
 
-                    <form>
-                        <div>
-                            <label class="form-label mt-3" for="EmailId">Email Address</label>
-                            <input type="email" class="form-control" id="emailLogin" placeholder="Enter your email" runat="server" required="required" />
-                        </div>
 
-                        <div>
-                            <label class="form-label mt-3" for="UserPasswordTb">Password</label>
-                            <input class="form-control" type="password" id="passwordLogin" placeholder="Enter your password" runat="server" required="required" />
-                        </div>
+                <div class="col-md-4 mt-4">
+                    <div class="content-login">
+                        <h1 class="text-danger text-singup logohidevisible">Sign Up</h1>
 
-                        <div>
-                            <asp:Button Class="btn btn-danger btn-log" runat="server" Text="Log In" ID="btnSaveLogin" OnClick="btnSaveLogin_Click" />
-                            <label id="InfoMsg" runat="server" class="my-2"></label>
-                        </div>
-                    </form>
+                        <form>
+                            <div>
+                                <label class="form-label mt-3" for="EmailId">Email Address</label>
+                                <input type="email" class="form-control" id="emailLogin" placeholder="Enter your email" required="required" />
+                            </div>
+
+                            <div>
+                                <label class="form-label mt-3" for="UserPasswordTb">Password</label>
+                                <input class="form-control" type="password" id="passwordLogin" placeholder="Enter your password" required="required"/>
+                            </div>
+
+              
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-    </div>
-</body>
+                <div class="col-md-1"></div>
+
+                <div class="col-md-1"/></div>
+
+            </div>
+
+
+    </body>
 </html>
