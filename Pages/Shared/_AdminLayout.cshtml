@@ -15,7 +15,7 @@
         <link href="~/css/sites.css" rel="stylesheet" />
     </head>
 
-    <body>
+    <body">
 
         <div id="mySidenav" class="sidenav">
             <div>
@@ -118,6 +118,15 @@
                     x.style.display = "block";
                 }
              }
+
+            function myFunction() {
+                var x = document.getElementById("backbut");
+                if (x.style.display === "none") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "none";
+                }
+            }
         </script>
         @RenderBody()
     </body>
