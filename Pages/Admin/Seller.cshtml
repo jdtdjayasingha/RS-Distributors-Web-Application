@@ -56,6 +56,9 @@
                     <label id="ErrMsg" runat="server" class="text-primary"></label>
                 </div>
             </div>
-      
+                <div class="col-lg-9 table-responsive">
+                    <asp:GridView runat="server" class="table table-bordered table-hover" ID="gridViewSeller" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gridViewSeller_SelectedIndexChanged">
+                    </asp:GridView>
+                </div>
         </div>
     </div>
