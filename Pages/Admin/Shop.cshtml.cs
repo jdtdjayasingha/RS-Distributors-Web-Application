@@ -8,5 +8,7 @@ namespace RsDistributors.Pages.Admin
         public void OnGet()
         {
         }
+
+        public required string droCategoryShop { get; set; }
     }
 }
