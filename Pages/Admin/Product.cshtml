@@ -13,11 +13,11 @@
                 <div class="mb-3">
                     <label for="CategoryTb" class="form-label">Product Category</label>
                     <div>
-                       <asp:DropDownList class="form-control" ID="droCategoryProduct" runat="server" >
-                           <asp:ListItem>Besto</asp:ListItem>
-                           <asp:ListItem>Delmo</asp:ListItem>
-                       </asp:DropDownList>
-                   </div>
+                        <select class="form-control" asp-for="droCategoryProduct">
+                            <option value="Besto">Besto</option>
+                            <option value="Delmo">Delmo</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -46,5 +46,6 @@
                 <asp:GridView runat="server" class="table table-bordered table-hover" ID="gridViewProduct" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gridViewProduct_SelectedIndexChanged">
                 </asp:GridView>
             </div>
+            
         </div>
     </div>

@@ -12,10 +12,10 @@
                  <div class="mb-3">
                     <label for="CategoryTb" class="form-label">Seller Category</label>
                     <div>
-                       <asp:DropDownList class="form-control" ID="droCategorySeller" runat="server" >
-                           <asp:ListItem>Besto</asp:ListItem>
-                           <asp:ListItem>Delmo</asp:ListItem>
-                       </asp:DropDownList>
+                         <select class="form-control" asp-for="droCategorySeller">
+                            <option value="Besto">Besto</option>
+                            <option value="Delmo">Delmo</option>
+                        </select>
                    </div>
                 </div>
 
@@ -50,9 +50,9 @@
                 </div>
 
                 <div>
-                    <asp:Button text="  Edit  " Class="btn btn-danger product-btn" runat="server" ID="Button1" OnClick="btnEditSeller_Click" />
-                    <asp:Button text=" Save " Class="btn btn-danger product-btn" runat="server" ID="Button2" OnClick="btnSaveSeller_Click" />
-                    <asp:Button text="Delete" Class="btn btn-danger product-btn" runat="server" ID="Button3" OnClick="btnDeleteSeller_Click" /><br /><br />
+                    <button type="submit" asp-page-handler="editBtnClick" class="btn btn-danger product-btn" id="editBtn">Edit</button>
+                    <button type="submit" asp-page-handler="saveBtnClick" class="btn btn-danger product-btn" id="saveBtn">Save</button>
+                    <button type="submit" asp-page-handler="deleteBtnClick" class="btn btn-danger product-btn" id="deleteBtn">Delete</button><br /><br />
                     <label id="ErrMsg" runat="server" class="text-primary"></label>
                 </div>
             </div>
