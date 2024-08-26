@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RsDistributors")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a2046ef557595cf4c65a0cb64ee5248559ea4d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b389eea0638895fd67138680f7dd88980406584d")]
 [assembly: System.Reflection.AssemblyProductAttribute("RsDistributors")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RsDistributors")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
