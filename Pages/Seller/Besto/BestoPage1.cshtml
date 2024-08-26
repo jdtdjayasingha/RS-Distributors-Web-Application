@@ -3,28 +3,24 @@
 @{
 }
  <div class="container product-container">
-            <div class="row"></div>
+    <div class="row"></div>
 
-            <div class="row">
-                <div class="col-lg-3">
-                    <h3 class="product-details text-danger">Billing Details</h3>
-
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Shop Name</label>
-                        <asp:DropDownList class="form-control" ID="DropDownShop" runat="server"></asp:DropDownList>
-                    </div>
-
-                    <div>
-                        <asp:Button Class="btn btn-danger product-btn" ID="btnNext" runat="server" Text="Next" OnClick="btnNext_Click" />
-                        <label id="ErrMsg" runat="server" class="text-primary"></label>
-                    </div>
-                
+        <div class="row">    
+            <div class="col-lg-3">
+                <h3 class="product-details text-danger">Billing Details</h3>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Shop Name</label>
+                        <select class="form-control" asp-for="DropDownShop">
+                        </select>
                 </div>
-        
-               <div class="col-lg-9">
-                   <div class="row table-responsive" id ="bill">
-                </div>
+                <div>
+                    <button type="submit" asp-page-handler="btnNext" class="btn btn-danger product-btn" id="btnNext">Next</button>
+                    <label id="ErrMsg" runat="server" class="text-primary"></label>
+                </div>   
             </div>
-
+            <div class="col-lg-9">
+               <div class="row table-responsive" id ="bill">
+            </div>
         </div>
     </div>
+</div>
