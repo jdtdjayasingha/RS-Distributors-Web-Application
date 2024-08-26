@@ -11,7 +11,8 @@ namespace RsDistributors.Pages
 
         public IActionResult OnPostBtnSaveLoginClick()
         {
-            return RedirectToPage("/Admin/Product");
+            //return RedirectToPage("/Admin/Product");
+            return RedirectToPage("/Seller/Besto/BestoPage1");
         }
     }
 }

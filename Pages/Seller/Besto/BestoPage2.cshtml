@@ -11,27 +11,28 @@
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Product Name</label>
-                <asp:DropDownList class="form-control" ID="droSeller" runat="server" OnSelectedIndexChanged="droSeller_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+                <select class="form-control" asp-for="droSeller_SelectedIndexChanged">
+                </select>
             </div>
 
-            <div class="mb-3"> 
+            <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Product Price</label>
-                <asp:TextBox class="form-control" ID="textPrice" runat="server" ReadOnly="True"></asp:TextBox>
+                <input type="text" class="form-control" id="textPrice" asp-for="ProductPrice" readonly />
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Product Quintity</label>
-                <asp:TextBox class="form-control" ID="textQut" runat="server" OnTextChanged="textQutBesto_TextChanged"></asp:TextBox>
+                <input type="text" class="form-control" id="textPrice" asp-for="textQut" />
             </div>
 
             <div hidden class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Total</label>
-                <asp:TextBox class="form-control" ID="textTotal" runat="server" ></asp:TextBox>
+                <input type="text" class="form-control" id="textPrice" asp-for="textTotal" />
             </div>
 
             <div>
-                <asp:Button Class="btn btn-danger product-btn" ID="AddToBillBtn" runat="server" Text="Add To Bill" OnClick="AddToBillBtn_Click" />
-                <asp:Button Class="btn btn-danger product-btn" ID="BTNPrint" runat="server" Text="Print" OnClientClick="javascript:printDiv('div1')" />
+                <button type="submit" asp-page-handler="AddToBillBtn" class="btn btn-danger product-btn" id="saveBtn">Add To Bill</button>
+                <button type="submit" asp-page-handler="BTNPrint" class="btn btn-danger product-btn" id="saveBtn">Print</button>
                 <label id="ErrMsg" runat="server" class="text-primary"></label>
             </div>
         </div>
