@@ -162,3 +162,9 @@ C:/Users/visio/Documents/Settings/Git Hub/RS-Distributors-Web-Application/obj/De
 /Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
 /Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistributors.csproj.AssemblyReference.cache
 /Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/Debug/net8.0/RsDistri.BFC557EA.Up2Date
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/System.Data.SqlClient.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/runtimes/win-arm64/native/sni.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/runtimes/win-x64/native/sni.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/runtimes/win-x86/native/sni.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/bin/Debug/net8.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
