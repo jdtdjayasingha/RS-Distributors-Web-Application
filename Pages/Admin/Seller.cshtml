@@ -6,59 +6,104 @@
         <div class="row"></div>
 
        <div class="row">
-            <div class="col-lg-3">
+            <form method="post" class="col-lg-3">
                 <h3 class="product-details text-danger">Seller Details</h3>
 
                  <div class="mb-3">
                     <label for="CategoryTb" class="form-label">Seller Category</label>
                     <div>
-                         <select class="form-control" asp-for="droCategorySeller">
-                            <option value="Besto">Besto</option>
-                            <option value="Delmo">Delmo</option>
-                        </select>
+                        <select class="form-control" asp-for="Seller.Category" asp-items="Model.Categories"></select>
+                        <span style="color:red;" asp-validation-for="Seller.Category"></span>
                    </div>
                 </div>
 
                 <div class="mb-3">
-                    <label for="SNameTb" class="form-label">Seller Name</label>
-                    <input type="text" class="form-control" id="inpNameSeller" runat="server">
+                    <label asp-for="Seller.Name" class="form-label">Seller Name</label>
+                    <input type="text" class="form-control" asp-for="Seller.Name">
+                    <span style="color:red;" asp-validation-for="Seller.Name"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label for="SEmailTb" class="form-label">Seller Email</label>
-                    <input type="Email" class="form-control" id="inpEmailSeller" runat="server">
+                    <label asp-for="Seller.Email" class="form-label">Seller Email</label>
+                    <input type="Email" class="form-control" asp-for="Seller.Email">
+                    <span style="color:red;" asp-validation-for="Seller.Email"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label for="PhoneTb" class="form-label">Seller Phone</label>
-                    <input type="text" class="form-control" id="inpPhoneSeller" runat="server">
+                    <label asp-for="Seller.Phone" class="form-label">Seller Phone</label>
+                    <input type="text" class="form-control" asp-for="Seller.Phone">
+                    <span style="color:red;" asp-validation-for="Seller.Phone"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label for="sellernicTb" class="form-label">Seller NIC</label>
-                    <input type="text" class="form-control" id="inpNicSeller" runat="server">
+                    <label asp-for="Seller.NIC" class="form-label">Seller NIC</label>
+                    <input type="text" class="form-control" asp-for="Seller.NIC">
+                    <span style="color:red;" asp-validation-for="Seller.NIC"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label for="SellAddressTb" class="form-label">Seller Address</label>
-                    <input type="text" class="form-control" id="inpAddressSeller" runat="server">
+                    <label asp-for="Seller.Address" class="form-label">Seller Address</label>
+                    <input type="text" class="form-control" asp-for="Seller.Address">
+                    <span style="color:red;" asp-validation-for="Seller.Address"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label for="sellerPassTb" class="form-label">Seller Password</label>
-                    <input type="text" class="form-control" id="inpPasswordSeller" runat="server">
+                    <label asp-for="Seller.Password" class="form-label">Seller Password</label>
+                    <input type="text" class="form-control" asp-for="Seller.Password">
+                    <span style="color:red;" asp-validation-for="Seller.Password"></span>
                 </div>
 
                 <div>
-                    <button type="submit" asp-page-handler="editBtnClick" class="btn btn-danger product-btn" id="editBtn">Edit</button>
+                    <button class="btn btn-danger product-btn" type="submit" asp-page-handler="SaveSeller">Save</button><br/><br/>
+                    <span>@Model.ErrMsg</span>
+                    @* <button type="submit" asp-page-handler="editBtnClick" class="btn btn-danger product-btn" id="editBtn">Edit</button>
                     <button type="submit" asp-page-handler="saveBtnClick" class="btn btn-danger product-btn" id="saveBtn">Save</button>
                     <button type="submit" asp-page-handler="deleteBtnClick" class="btn btn-danger product-btn" id="deleteBtn">Delete</button><br /><br />
-                    <label id="ErrMsg" runat="server" class="text-primary"></label>
+                    <label id="ErrMsg" runat="server" class="text-primary"></label> *@
                 </div>
+            </form>
+            <div class="col-lg-9 table-responsive mb-5">
+                <h3 class="text-danger mb-3">Sellers List</h3>
+                <table class="table table-bordered table-hover mb-4">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>NIC</th>
+                            <th>Address</th>
+                            <th>Password</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var seller in Model.Sellers)
+                        {
+                            <tr>
+                                <td>@seller.Category</td>
+                                <td>@seller.Name</td>
+                                <td>@seller.Email</td>
+                                <td>@seller.Phone</td>
+                                <td>@seller.NIC</td>
+                                <td>@seller.Address</td>
+                                <td>@seller.Password</td>
+                                <td>
+                                    <div style="display: flex; gap: 7px;">
+                                    <a style="width: 60px;" class="btn btn-sm btn-warning mb-1" asp-page-handler="EditSeller" asp-route-id="@seller.ID">Edit</a>
+                                    <a style="width: 60px;" class="btn btn-sm btn-danger mb-1" asp-page-handler="DeleteSeller" asp-route-id="@seller.ID">Delete</a>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
             </div>
-                <div class="col-lg-9 table-responsive">
+
+                @* <div class="col-lg-9 table-responsive">
                     <asp:GridView runat="server" class="table table-bordered table-hover" ID="gridViewSeller" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gridViewSeller_SelectedIndexChanged">
                     </asp:GridView>
-                </div>
+                </div> *@
         </div>
     </div>
