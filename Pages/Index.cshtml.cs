@@ -8,5 +8,11 @@ namespace RsDistributors.Pages
         public void OnGet()
         {
         }
+
+        public IActionResult OnPostBtnSaveLoginClick()
+        {
+            //return RedirectToPage("/Admin/Product");
+            return RedirectToPage("/Seller/Besto/BestoPage1");
+        }
     }
 }

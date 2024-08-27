@@ -2,4 +2,134 @@
 @model RsDistributors.Pages.Seller.Besto.BestoPage2Model
 @{
 }
-<h1>BestoPage2</h1>
+<div class="container product-container">
+    <div class="row"></div>
+
+    <div class="row">
+        <div class="col-lg-3">
+            <h3 class="product-details text-danger">Billing Details</h3>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Product Name</label>
+                <select class="form-control" asp-for="droSeller_SelectedIndexChanged">
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Product Price</label>
+                <input type="text" class="form-control" id="textPrice" asp-for="ProductPrice" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Product Quintity</label>
+                <input type="text" class="form-control" id="textPrice" asp-for="textQut" />
+            </div>
+
+            <div hidden class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Total</label>
+                <input type="text" class="form-control" id="textPrice" asp-for="textTotal" />
+            </div>
+
+            <div>
+                <button type="submit" asp-page-handler="AddToBillBtn" class="btn btn-danger product-btn" id="saveBtn">Add To Bill</button>
+                <button type="submit" asp-page-handler="BTNPrint" class="btn btn-danger product-btn" id="saveBtn">Print</button>
+                <label id="ErrMsg" runat="server" class="text-primary"></label>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+
+        <div  id="div1" class="col-lg-8 invbox " style="background-color: white; margin: 10px 0 100px 0;">
+             <div id="printdiv">
+                <div class="row">
+                    <div class="col-xs-12">
+    		            <div class="invoice-title">
+    			            <h2 style="margin-top:20px; ">Invoice</h2>
+    		            </div>
+    		            <hr>
+
+    		           <div class="row">
+    			            <div class="col-6">
+    				            <address>
+                                <p>Pure Green<br />Homagama,<br />Colombo,<br />011 550046.</p>
+    				            </address>
+    			            </div>
+    			            <div class="col-6 text-end">
+    				            <address>
+        			            <strong>Shop Name</strong>
+                                    <p><asp:Label ID="ShopNameLabel" runat="server" Text="-"></asp:Label></p>
+    				            </address>
+    			            </div>
+    		            </div>
+
+               		   <div class="row">
+    			            <div class="col-6">
+    				            <address>
+    					            <strong>Seller</strong>
+                                    <p>Kasun</p>
+    				            </address>
+    			            </div>
+    			            <div class="col-6 text-end">
+    				            <address>
+    					            <strong>Order Date</strong>
+                                      <div id="current_date">
+                                           <script>
+                                               date = new Date();
+                                               year = date.getFullYear();
+                                               month = date.getMonth() + 1;
+                                               day = date.getDate();
+                                               document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+                                           </script>
+                                       </div>
+    				            </address>
+    			            </div>
+    		            </div>
+
+
+    	            </div>
+                </div>
+
+
+                <div class="row">
+    	            <div class="col-md-12">
+    		            <div class="panel panel-default">
+                            <asp:GridView ID="GridViewBill" runat="server" class="table"></asp:GridView>
+    		            </div>
+    	            </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-6"></div>
+                     <div class="col-6">
+   		                <div class="row">
+   			                <div class="col-x-6">
+   			                </div>
+   		                </div>
+   		                <div class="row">
+   			                <div class="col-xs-6 text-end">
+                                   <div>
+                                       <strong>Total</strong>
+                                       <p><asp:Label ID="Label1" runat="server" Text="0"></asp:Label></p>
+                                   </div>
+   			                </div>
+   		                </div>
+   	                </div>
+                    <hr>
+
+                <p class="text-center">Powered By ©️ Ocquita</p>
+  
+                </div>
+            </div>     
+        </div>
+    </div>
+     </div>
+
+    	<script>
+            function printDiv(printdiv) {
+                var printContents = document.getElementById(printdiv).innerHTML;
+                var originalContents = document.body.innerHTML;
+                document.body.innerHTML = printContents;
+                window.print();
+                document.body.innerHTML = originalContents;
+            }
+        </script>

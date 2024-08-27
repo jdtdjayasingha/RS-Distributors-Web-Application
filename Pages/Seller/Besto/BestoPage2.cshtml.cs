@@ -8,5 +8,10 @@ namespace RsDistributors.Pages.Seller.Besto
         public void OnGet()
         {
         }
+
+        public required string droSeller_SelectedIndexChanged { get; set; }
+        public required string ProductPrice { get; set; }
+        public required string textQut { get; set; }
+        public required string textTotal { get; set; }
     }
 }

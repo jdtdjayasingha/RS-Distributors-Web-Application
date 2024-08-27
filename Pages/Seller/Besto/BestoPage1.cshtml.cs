@@ -8,5 +8,7 @@ namespace RsDistributors.Pages.Seller.Besto
         public void OnGet()
         {
         }
+
+        public required string DropDownShop { get; set; }
     }
 }

@@ -2,4 +2,47 @@
 @model RsDistributors.Pages.Admin.ShopModel
 @{
 }
-<h1>Shop</h1>
+<div class="container product-container">
+        <div class="row"></div>
+
+        <div class="row">
+            <div class="col-lg-3">
+                <h3 class="product-details text-danger">Shop Details</h3>
+
+                <div class="mb-3">
+                    <label for="CategoryTb" class="form-label">Shop Category</label>
+                    <div>
+                        <select class="form-control" asp-for="droCategoryShop">
+                            <option value="Besto">Besto</option>
+                            <option value="Delmo">Delmo</option>
+                        </select>
+                   </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="CatNameTb" class="form-label">Shop Name</label>
+                    <input type="text" class="form-control" id="shopName" runat="server">
+                </div>
+
+                <div class="mb-3">
+                    <label for="CatRemarkTb" class="form-label">Shop Area</label>
+                    <input type="text" class="form-control" id="shopArea" runat="server">
+                </div>
+
+                <div class="mb-3">
+                    <label for="CatRemarkTb" class="form-label">Shop Phone</label>
+                    <input type="text" class="form-control" id="shopPhone" runat="server">
+                </div>
+
+                <button type="submit" asp-page-handler="editBtnClick" class="btn btn-danger product-btn" id="editBtn">Edit</button>
+                <button type="submit" asp-page-handler="saveBtnClick" class="btn btn-danger product-btn" id="saveBtn">Save</button>
+                <button type="submit" asp-page-handler="deleteBtnClick" class="btn btn-danger product-btn" id="deleteBtn">Delete</button><br /><br />
+                <label id="ErrMsg" runat="server" class="text-danger"></label>
+            </div>
+    
+            <div class="col-lg-9 table-responsive">
+                <asp:GridView runat="server" class="table table-bordered table-hover" ID="CategoryGVv" AutoGenerateSelectButton="True" OnSelectedIndexChanged="CategoryGV_SelectedIndexChanged">
+                </asp:GridView>
+            </div>
+        </div>
+</div>

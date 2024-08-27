@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj": {}
+    "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/RsDistributors.csproj": {}
   },
   "projects": {
-    "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj": {
+    "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/RsDistributors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj",
+        "projectUniqueName": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/RsDistributors.csproj",
         "projectName": "RsDistributors",
-        "projectPath": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\RsDistributors.csproj",
-        "packagesPath": "C:\\Users\\visio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\visio\\Documents\\Settings\\Git Hub\\RS-Distributors-Web-Application\\obj\\",
+        "projectPath": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/RsDistributors.csproj",
+        "packagesPath": "/Users/jd/.nuget/packages/",
+        "outputPath": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\visio\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jd/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,15 +44,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.7, )"
+              "version": "[8.0.8, )"
             }
           },
           "imports": [
@@ -76,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
