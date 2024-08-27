@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -30,7 +29,7 @@ namespace RsDistributors.Pages
             using (SqlConnection con = new SqlConnection(_connectionString))
             {
                 con.Open();
-                string query = "SELECT * FROM Users WHERE Email=@Email AND Password=@Password";
+                string query = "SELECT * FROM SellerTB WHERE Email=@Email AND Password=@Password";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@Email", emailLogin);
                 cmd.Parameters.AddWithValue("@Password", passwordLogin);
