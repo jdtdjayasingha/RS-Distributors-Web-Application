@@ -46,23 +46,19 @@
 
                         <form method="post">
                             <div>
-                                <label class="form-label mt-3" for="EmailId">Email Address</label>
-                                <input type="email" class="form-control" id="emailLogin" placeholder="Enter your email" required="required" />
+                                <label class="form-label mt-3" asp-for="emailLogin">Email Address</label>
+                                <input class="form-control" asp-for="emailLogin" placeholder="Enter your email" required="required" />
                             </div>
 
                             <div>
-                                <label class="form-label mt-3" for="UserPasswordTb">Password</label>
-                                <input class="form-control" type="password" id="passwordLogin" placeholder="Enter your password" required="required"/>
+                                <label class="form-label mt-3" asp-for="passwordLogin">Password</label>
+                                <input class="form-control" type="password" asp-for="passwordLogin" placeholder="Enter your password" required="required"/>
                             </div>
-
                             <div>
-                                <button type="submit" asp-page-handler="btnSaveLoginClick" class="btn btn-danger btn-log" id="btnSaveLogin">Log in</button>
-                                <label id="InfoMsg" runat="server" class="my-2"></label>
-
-                                <div>
-                                    <p id="ShowResult1">
-                                    </p>
-                                </div>
+                                <button type="submit" class="btn btn-danger btn-log" id="btnSaveLogin">Log in</button>
+                            </div><br/>
+                            <div>
+                                <span style="color:red;">@Model.infoMsg</span>
                             </div>
                         </form>
                     </div>
