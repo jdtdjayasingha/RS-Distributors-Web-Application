@@ -2,47 +2,44 @@
 @model RsDistributors.Pages.Admin.ShopModel
 @{
 }
-<div class="container product-container">
+ <div class="container seller-container">
         <div class="row"></div>
 
-        <div class="row">
-            <div class="col-lg-3">
+       <div class="row">
+            <form method="post" class="col-lg-3">
                 <h3 class="product-details text-danger">Shop Details</h3>
 
-                <div class="mb-3">
+                 <div class="mb-3">
                     <label for="CategoryTb" class="form-label">Shop Category</label>
                     <div>
-                        <select class="form-control" asp-for="droCategoryShop">
-                            <option value="Besto">Besto</option>
-                            <option value="Delmo">Delmo</option>
-                        </select>
+                        <select class="form-control" asp-for="Shop.Category" asp-items="Model.Categories"></select>
+                        <span style="color:red;" asp-validation-for="Shop.Category"></span>
                    </div>
                 </div>
 
                 <div class="mb-3">
-                    <label for="CatNameTb" class="form-label">Shop Name</label>
-                    <input type="text" class="form-control" id="shopName" runat="server">
+                    <label asp-for="Shop.Name" class="form-label">Shop Name</label>
+                    <input type="text" class="form-control" asp-for="Shop.Name">
+                    <span style="color:red;" asp-validation-for="Shop.Name"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label for="CatRemarkTb" class="form-label">Shop Area</label>
-                    <input type="text" class="form-control" id="shopArea" runat="server">
+                    <label asp-for="Shop.Area" class="form-label">Shop Area</label>
+                    <input type="text" class="form-control" asp-for="Shop.Area">
+                    <span style="color:red;" asp-validation-for="Shop.Area"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label for="CatRemarkTb" class="form-label">Shop Phone</label>
-                    <input type="text" class="form-control" id="shopPhone" runat="server">
+                    <label asp-for="Shop.Phone" class="form-label">Shop Phone</label>
+                    <input type="text" class="form-control" asp-for="Shop.Phone">
+                    <span style="color:red;" asp-validation-for="Shop.Phone"></span>
                 </div>
 
-                <button type="submit" asp-page-handler="editBtnClick" class="btn btn-danger product-btn" id="editBtn">Edit</button>
-                <button type="submit" asp-page-handler="saveBtnClick" class="btn btn-danger product-btn" id="saveBtn">Save</button>
-                <button type="submit" asp-page-handler="deleteBtnClick" class="btn btn-danger product-btn" id="deleteBtn">Delete</button><br /><br />
-                <label id="ErrMsg" runat="server" class="text-danger"></label>
-            </div>
-    
-            <div class="col-lg-9 table-responsive">
-                <asp:GridView runat="server" class="table table-bordered table-hover" ID="CategoryGVv" AutoGenerateSelectButton="True" OnSelectedIndexChanged="CategoryGV_SelectedIndexChanged">
-                </asp:GridView>
-            </div>
+                <div>
+                    <button class="btn btn-danger product-btn" type="submit" asp-page-handler="SaveShop">Save</button><br/><br/>
+                    <span>@Model.ErrMsg</span>
+                </div>
+            </form>
+            
         </div>
-</div>
+    </div>
