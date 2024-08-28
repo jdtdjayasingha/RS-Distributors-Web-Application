@@ -42,11 +42,11 @@ namespace RsDistributors.Pages
                 {
                     string passStatus = dt.Rows[0]["Category"]?.ToString() ?? string.Empty;
 
-                    if (passStatus == "besto")
+                    if (passStatus == "Besto")
                     {
                         return RedirectToPage("/Seller/Besto/BestoPage1");
                     }
-                    else if (passStatus == "delmo")
+                    else if (passStatus == "Delmo")
                     {
                         return RedirectToPage("/Seller/Delmo/DelmoPage1");
                     }
