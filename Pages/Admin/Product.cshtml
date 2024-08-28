@@ -29,7 +29,40 @@
                     <span style="color:red;" asp-validation-for="Product.Price"></span>
                 </div>
 
-              
+                <div>
+                    <button class="btn btn-danger product-btn" type="submit" asp-page-handler="SaveProduct">Save</button><br/><br/>
+                    <span>@Model.ErrMsg</span>
+                </div>
+            </form>
+            <div class="col-lg-9 table-responsive mb-5">
+                <h3 class="text-danger mb-3">Product List</h3>
+                <table class="table table-bordered table-hover mb-4">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var Product in Model.Products)
+                        {
+                            <tr>
+                                <td>@Product.Category</td>
+                                <td>@Product.Name</td>
+                                <td>@Product.Price</td>
+                                <td>
+                                    <div style="display: flex; gap: 7px;">
+                                    <a style="width: 60px;" class="btn btn-sm btn-warning mb-1" asp-page-handler="EditProduct" asp-route-id="@Product.ID">Edit</a>
+                                    <a style="width: 60px;" class="btn btn-sm btn-danger mb-1" asp-page-handler="DeleteProduct" asp-route-id="@Product.ID">Delete</a>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
