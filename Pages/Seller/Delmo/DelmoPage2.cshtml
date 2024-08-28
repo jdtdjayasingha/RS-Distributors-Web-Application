@@ -1,5 +1,128 @@
 ﻿@page
 @model RsDistributors.Pages.Seller.Delmo.DelmoPage2Model
 @{
+    ViewData["Title"] = "DelmoPage2";
 }
-<h1>DelmoPage2</h1>
+
+<div class="container product-container">
+    <div class="row"></div>
+
+    <div class="row">
+        <form method="post" class="col-lg-3">
+            <h3 class="product-details text-danger">Billing Details</h3>
+
+            <div class="mb-3">
+                <label for="droSeller" class="form-label">Product Name</label>
+                <select asp-for="SelectedProductId" asp-items="Model.Products" class="form-control" id="productDropdown">
+                    <option value="">Select a Product</option>
+                </select>
+            </div>
+
+            <div class="mb-3"> 
+                <label for="textPrice" class="form-label">Product Price</label>
+                <input asp-for="Price" class="form-control" id="priceInput" readonly/>
+            </div>
+
+            <div class="mb-3">
+                <label for="textQut" class="form-label">Product Quantity</label>
+                <input asp-for="Quantity" class="form-control" />
+            </div>
+
+            <div hidden class="mb-3">
+                <label for="textTotal" class="form-label">Total</label>
+                <input asp-for="Total" class="form-control" />
+            </div>
+
+            <div>
+                <button type="submit" asp-page-handler="AddToBill" class="btn btn-danger product-btn">Add To Bill</button>
+                <button type="submit" asp-page-handler="PrintBill" class="btn btn-danger product-btn" onclick="printDiv('div1')">Print</button><br /><br />
+                <span class="text-primary">@Model.ErrMsg</span>
+            </div>
+        </form>
+        <div class="col-lg-1"></div>
+
+        <div id="div1" class="col-lg-8 invbox" style="background-color: white; margin: 10px 0 100px 0;">
+            <div id="printdiv">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="invoice-title">
+                            <h2 style="margin-top:20px;">Invoice</h2>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-6">
+                                <address>
+                                    <p>Rs Distributors,<br />Homagama,<br />Colombo,<br />011 5500467.</p>
+                                </address>
+                            </div>
+                            <div class="col-6 text-end">
+                                <address>
+                                    <strong>Shop Name</strong>
+                                    <p>@Model.ShopName</p>
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <address>
+                                    <strong>Seller</strong>
+                                    <p>Kasun</p>
+                                </address>
+                            </div>
+                            <div class="col-6 text-end">
+                                <address>
+                                    <strong>Order Date</strong>
+                                    <p>@DateTime.Now.ToString("MM/dd/yyyy")</p>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-xs-6 text-end">
+                                <div>
+                                    <strong>Total</strong>
+                                    <p>@Model.GrandTotal</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <p class="text-center">Powered By ©️ JD</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('productDropdown').addEventListener('change', function() {
+        var productId = this.value;
+        if (productId) {
+            fetch(`/Seller/Besto/BestoPage2?handler=ProductPrice&productId=${productId}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('priceInput').value = data.price;
+                })
+                .catch(error => console.error('Error fetching product price:', error));
+        } else {
+            document.getElementById('priceInput').value = '';
+        }
+    });
+
+    function printDiv(printdiv) {
+        var printContents = document.getElementById(printdiv).innerHTML;
+        var originalContents = document.body.innerHTML;
+        document.body.innerHTML = printContents;
+        window.print();
+        document.body.innerHTML = originalContents;
+    }
+</script>
