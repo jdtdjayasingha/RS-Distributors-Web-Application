@@ -103,6 +103,10 @@
     .loginFooterTwo {
         visibility: hidden;
     }
+
+    .img-main-dlogohide {
+        display: none;
+    }
 }
 
 
