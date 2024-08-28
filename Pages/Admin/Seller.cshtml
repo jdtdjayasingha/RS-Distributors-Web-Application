@@ -56,10 +56,6 @@
                 <div>
                     <button class="btn btn-danger product-btn" type="submit" asp-page-handler="SaveSeller">Save</button><br/><br/>
                     <span>@Model.ErrMsg</span>
-                    @* <button type="submit" asp-page-handler="editBtnClick" class="btn btn-danger product-btn" id="editBtn">Edit</button>
-                    <button type="submit" asp-page-handler="saveBtnClick" class="btn btn-danger product-btn" id="saveBtn">Save</button>
-                    <button type="submit" asp-page-handler="deleteBtnClick" class="btn btn-danger product-btn" id="deleteBtn">Delete</button><br /><br />
-                    <label id="ErrMsg" runat="server" class="text-primary"></label> *@
                 </div>
             </form>
             <div class="col-lg-9 table-responsive mb-5">
@@ -100,10 +96,5 @@
                     </tbody>
                 </table>
             </div>
-
-                @* <div class="col-lg-9 table-responsive">
-                    <asp:GridView runat="server" class="table table-bordered table-hover" ID="gridViewSeller" AutoGenerateSelectButton="True" OnSelectedIndexChanged="gridViewSeller_SelectedIndexChanged">
-                    </asp:GridView>
-                </div> *@
         </div>
     </div>
