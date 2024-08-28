@@ -37,7 +37,100 @@ namespace RsDistributors.Pages.Admin
             return Page();
         }
 
-       
+        public async Task<IActionResult> OnPostSaveShopAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                await LoadShopsAsync();
+                return Page();
+            }
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    await con.OpenAsync();
+                    string query = "INSERT INTO ShopTB (Category, Name, Area, Phone) VALUES (@Category, @Name, @Area, @Phone)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Category", Shop.Category);
+                        cmd.Parameters.AddWithValue("@Name", Shop.Name);
+                        cmd.Parameters.AddWithValue("@Area", Shop.Area);
+                        cmd.Parameters.AddWithValue("@Phone", Shop.Phone);
+                        await cmd.ExecuteNonQueryAsync();
+                        ErrMsg = "Product Added!";
+                    }
+                }
+                return RedirectToPage();
+            }
+            catch (Exception ex)
+            {
+                ErrMsg = $"Error: {ex.Message}";
+                await LoadShopsAsync();
+                return Page();
+            }
+        }
+
+        public async Task<IActionResult> OnGetEditShopAsync(int id)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    await con.OpenAsync();
+                    string query = "SELECT * FROM ShopTB WHERE ID = @ID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", id);
+                        using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
+                        {
+                            if (await reader.ReadAsync())
+                            {
+                                Shop = new Shop
+                                {
+                                    ID = (int)reader["ID"],
+                                    Category = reader["Category"]?.ToString() ?? string.Empty,
+                                    Name = reader["Name"]?.ToString() ?? string.Empty,
+                                    Area = reader["Area"]?.ToString() ?? string.Empty,
+                                    Phone = reader["Phone"]?.ToString() ?? string.Empty,
+                                };
+                            }
+                        }
+                    }
+                }
+                await LoadShopsAsync();
+                return Page();
+            }
+            catch (Exception ex)
+            {
+                ErrMsg = $"Error: {ex.Message}";
+                return Page();
+            }
+        }
+
+        public async Task<IActionResult> OnGetDeleteShopAsync(int id)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    await con.OpenAsync();
+                    string query = "DELETE FROM ShopTB WHERE ID = @ID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", id);
+                        await cmd.ExecuteNonQueryAsync();
+                        ErrMsg = "Shop Deleted!";
+                    }
+                }
+                return RedirectToPage();
+            }
+            catch (Exception ex)
+            {
+                ErrMsg = $"Error: {ex.Message}";
+                return Page();
+            }
+        }
 
         private async Task LoadShopsAsync()
         {
