@@ -37,9 +37,98 @@ namespace RsDistributors.Pages.Admin
             return Page();
         }
 
-    
+        public async Task<IActionResult> OnPostSaveProductAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                await LoadProductsAsync();
+                return Page();
+            }
 
-        
+            try
+            {
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    await con.OpenAsync();
+                    string query = "INSERT INTO ProductTB (Category, Name, Price) VALUES (@Category, @Name, @Price)";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@Category", Product.Category);
+                        cmd.Parameters.AddWithValue("@Name", Product.Name);
+                        cmd.Parameters.AddWithValue("@Price", Product.Price);
+                        await cmd.ExecuteNonQueryAsync();
+                        ErrMsg = "Product Added!";
+                    }
+                }
+                return RedirectToPage();
+            }
+            catch (Exception ex)
+            {
+                ErrMsg = $"Error: {ex.Message}";
+                await LoadProductsAsync();
+                return Page();
+            }
+        }
+
+        public async Task<IActionResult> OnGetEditProductAsync(int id)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    await con.OpenAsync();
+                    string query = "SELECT * FROM ProductTB WHERE ID = @ID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", id);
+                        using (SqlDataReader reader = await cmd.ExecuteReaderAsync())
+                        {
+                            if (await reader.ReadAsync())
+                            {
+                                Product = new Product
+                                {
+                                    ID = (int)reader["ID"],
+                                    Category = reader["Category"]?.ToString() ?? string.Empty,
+                                    Name = reader["Name"]?.ToString() ?? string.Empty,
+                                    Price = reader["Price"]?.ToString() ?? string.Empty,
+                                };
+                            }
+                        }
+                    }
+                }
+                await LoadProductsAsync();
+                return Page();
+            }
+            catch (Exception ex)
+            {
+                ErrMsg = $"Error: {ex.Message}";
+                return Page();
+            }
+        }
+
+        public async Task<IActionResult> OnGetDeleteProductAsync(int id)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    await con.OpenAsync();
+                    string query = "DELETE FROM ProductTB WHERE ID = @ID";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", id);
+                        await cmd.ExecuteNonQueryAsync();
+                        ErrMsg = "Product Deleted!";
+                    }
+                }
+                return RedirectToPage();
+            }
+            catch (Exception ex)
+            {
+                ErrMsg = $"Error: {ex.Message}";
+                return Page();
+            }
+        }
 
         private async Task LoadProductsAsync()
         {
