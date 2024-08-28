@@ -40,6 +40,37 @@
                     <span>@Model.ErrMsg</span>
                 </div>
             </form>
-            
+            <div class="col-lg-9 table-responsive mb-5">
+                <h3 class="text-danger mb-3">Shop List</h3>
+                <table class="table table-bordered table-hover mb-4">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Phone</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var Shop in Model.Shops)
+                        {
+                            <tr>
+                                <td>@Shop.Category</td>
+                                <td>@Shop.Name</td>
+                                <td>@Shop.Area</td>
+                                <td>@Shop.Phone</td>
+                                <td>
+                                    <div style="display: flex; gap: 7px;">
+                                    <a style="width: 60px;" class="btn btn-sm btn-warning mb-1" asp-page-handler="EditShop" asp-route-id="@Shop.ID">Edit</a>
+                                    <a style="width: 60px;" class="btn btn-sm btn-danger mb-1" asp-page-handler="DeleteShop" asp-route-id="@Shop.ID">Delete</a>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
