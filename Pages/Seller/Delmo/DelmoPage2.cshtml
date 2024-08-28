@@ -80,7 +80,34 @@
                     </div>
                 </div>
 
-                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Quantity</th>
+                                        <th>Price</th>
+                                        <th class="text-end">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.BillItems)
+                                    {
+                                        <tr>
+                                            <td>@item.Name</td>
+                                            <td>@item.Quantity</td>
+                                            <td>@item.Price</td>
+                                            <td class="text-end" >@item.Total</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <div class="col-6"></div>
                     <div class="col-6">
