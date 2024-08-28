@@ -40,7 +40,25 @@ namespace RsDistributors.Pages.Seller.Delmo
             }
         }
 
-        
+        private async Task LoadShopsAsync()
+        {
+            using (var con = new SqlConnection(_connectionString))
+            {
+                await con.OpenAsync();
+                using (var cmd = new SqlCommand("SELECT ID, Name FROM ShopTB WHERE Category='Delmo'", con))
+                {
+                    var reader = await cmd.ExecuteReaderAsync();
+                    while (await reader.ReadAsync())
+                    {
+                        Shops.Add(new SelectListItem
+                        {
+                            Value = reader["ID"].ToString(),
+                            Text = reader["Name"].ToString()
+                        });
+                    }
+                }
+            }
+        }
 
         private async Task DelBillAsync()
         {
