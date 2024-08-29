@@ -57,7 +57,7 @@ namespace RsDistributors.Pages
                 }
                 else
                 {
-                    if (emailLogin == "admin@gmail.com" && passwordLogin == "admin")
+                    if (emailLogin == "Admin@gmail.com" && passwordLogin == "Admin")
                     {
                         return RedirectToPage("Admin/Dashboard");
                     }

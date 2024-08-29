@@ -1,11 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Configuration;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace RsDistributors.Pages.Seller.Besto
 {
@@ -39,9 +35,6 @@ namespace RsDistributors.Pages.Seller.Besto
 
         public void OnGet()
         {
-            // Retrieve the shop name from the session
-            //ShopName = HttpContext.Session.GetString("shopName") ?? string.Empty;
-
             LoadDropDownLists();
             ShowProducts();
             CalculateTotal();
@@ -66,14 +59,13 @@ namespace RsDistributors.Pages.Seller.Besto
                 }
             }
 
-            LoadDropDownLists(); // Reload dropdown lists
+            LoadDropDownLists();
         }
 
         public IActionResult OnPostPrintBill()
         {
             try
             {
-                // Insert GrandTotal into the TotalDB table
                 using (var con = new SqlConnection(_connectionString))
                 {
                     con.Open();
@@ -100,8 +92,6 @@ namespace RsDistributors.Pages.Seller.Besto
             {
                 ErrMsg = $"General Error: {ex.Message}";
             }
-
-            // Stay on the same page to display the message
             return Page();
         }
 
@@ -112,23 +102,20 @@ namespace RsDistributors.Pages.Seller.Besto
                 if (string.IsNullOrEmpty(SelectedProductId) || string.IsNullOrEmpty(Quantity) || string.IsNullOrEmpty(Price))
                 {
                     ErrMsg = "Missing Data";
-                    return Page(); // Stay on the same page
+                    return Page();
                 }
 
-                // Convert Quantity and Price to appropriate types (decimal)
                 if (!decimal.TryParse(Quantity, out decimal quantity) || !decimal.TryParse(Price, out decimal price))
                 {
                     ErrMsg = "Invalid Quantity or Price";
-                    return Page(); // Stay on the same page
+                    return Page();
                 }
 
-                // Calculate Total
                 decimal total = quantity * price;
-                Total = total.ToString("F2"); // Format total to 2 decimal places
+                Total = total.ToString("F2");
 
                 string productName = string.Empty;
 
-                // Fetch product name based on the selected product ID
                 using (var con = new SqlConnection(_connectionString))
                 {
                     con.Open();
@@ -143,20 +130,18 @@ namespace RsDistributors.Pages.Seller.Besto
                     }
                 }
 
-                // Ensure that a product name was retrieved
                 if (string.IsNullOrEmpty(productName))
                 {
                     ErrMsg = "Product not found";
-                    return Page(); // Stay on the same page
+                    return Page();
                 }
 
-                // Insert data into the BillTB table
                 using (var con = new SqlConnection(_connectionString))
                 {
                     con.Open();
                     var query = "INSERT INTO BillTB (Name, Quantity, Price, Total) VALUES (@Name, @Quantity, @Price, @Total)";
                     var cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@Name", productName); // Use the product name
+                    cmd.Parameters.AddWithValue("@Name", productName);
                     cmd.Parameters.AddWithValue("@Quantity", quantity);
                     cmd.Parameters.AddWithValue("@Price", price);
                     cmd.Parameters.AddWithValue("@Total", total);
@@ -165,7 +150,6 @@ namespace RsDistributors.Pages.Seller.Besto
                     ErrMsg = "Product Saved!";
                 }
 
-                // Reload the bill items and recalculate the total
                 ShowProducts();
                 CalculateTotal();
             }
@@ -178,7 +162,7 @@ namespace RsDistributors.Pages.Seller.Besto
                 ErrMsg = ex.Message;
             }
 
-            return RedirectToPage(); // Refresh the page
+            return RedirectToPage();
         }
 
         private void LoadDropDownLists()

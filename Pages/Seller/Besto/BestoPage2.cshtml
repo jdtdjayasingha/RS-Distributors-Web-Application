@@ -33,18 +33,11 @@
                 <input asp-for="Total" class="form-control" />
             </div>
 
-<div>
-    <button type="submit" asp-page-handler="AddToBill" class="btn btn-danger product-btn">Add To Bill</button>
-    <button type="submit" asp-page-handler="PrintBill" class="btn btn-danger product-btn" onclick="printDiv('div1')">Print</button><br /><br />
-    <span class="text-primary">@Model.ErrMsg</span>
-</div>
-            
-            @* <div>
+            <div>
                 <button type="submit" asp-page-handler="AddToBill" class="btn btn-danger product-btn">Add To Bill</button>
-
-                <button type="button" asp-page-handler="PrintBill" class="btn btn-danger product-btn" onclick="printDiv('div1')">Print</button><br /><br />
+                <button type="submit" asp-page-handler="PrintBill" class="btn btn-danger product-btn" onclick="printDiv('div1')">Print</button><br /><br />
                 <span class="text-primary">@Model.ErrMsg</span>
-            </div> *@
+            </div>
         </form>
         <div class="col-lg-1"></div>
 
@@ -65,7 +58,7 @@
                             <div class="col-6 text-end">
                                 <address>
                                     <strong>Shop Name</strong>
-                                    <p>@Model.ShopName</p>
+                                    <p>Saravanas Stores</p>
                                 </address>
                             </div>
                         </div>
