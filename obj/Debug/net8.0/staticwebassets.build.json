@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k2799Ydl8E1NmL6GuE73wj8xqK36CggFv4ySnORb/j4=",
+  "Hash": "++3GiToJ3XGzY7xe/xYrfikxYpQs1qVkQdilg9iJpSI=",
   "Source": "RsDistributors",
   "BasePath": "_content/RsDistributors",
   "Mode": "Default",
@@ -34,25 +34,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/sites.css"
-    },
-    {
-      "Identity": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/favicon.ico",
-      "SourceId": "RsDistributors",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/jd/Documents/GitHub/RS-Distributors-Web-Application/wwwroot/",
-      "BasePath": "_content/RsDistributors",
-      "RelativePath": "favicon.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
     }
   ]
 }

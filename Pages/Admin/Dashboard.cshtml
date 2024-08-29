@@ -48,8 +48,6 @@
   <body>
     <div class="wrapper">
       <div class="main-panel">
-       
-
         <div class="container">
           <div class="page-inner">
             <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-4 pb-3">
@@ -71,8 +69,8 @@
                       </div>
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
-                          <p class="card-category text-danger fs-4 fw-bold">Category</p>
-                          <h4 class="card-title">2</h4>
+                          <p class="card-category text-danger fs-4 fw-bold">Categories</p>
+                          <h4 class="card-title">02</h4>
                         </div>
                       </div>
                     </div>
@@ -93,7 +91,7 @@
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
                           <p class="card-category text-danger fs-4 fw-bold">Products</p>
-                          <h4 class="card-title">24</h4>
+                          <h4 class="card-title">08</h4>
                         </div>
                       </div>
                     </div>
@@ -114,7 +112,7 @@
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
                           <p class="card-category text-danger fs-4 fw-bold">Shops</p>
-                          <h4 class="card-title">30</h4>
+                          <h4 class="card-title">04</h4>
                         </div>
                       </div>
                     </div>
@@ -135,7 +133,7 @@
                       <div class="col col-stats ms-3 ms-sm-0">
                         <div class="numbers">
                           <p class="card-category text-danger fs-4 fw-bold">Sellers</p>
-                          <h4 class="card-title">13</h4>
+                          <h4 class="card-title">04</h4>
                         </div>
                       </div>
                     </div>
@@ -161,21 +159,22 @@
                       <div class="card-tools">
                       </div>
                     </div>
-                    <div class="card-category mb-2">March 25 2024</div>
+                    <div class="card-category mb-2">August 29 2024</div>
                   </div>
-                  <div class="card-body pb-0 mb-3">
+                  <div class="card-body pb-0">
                     <div class=" mt-2">
-                      <h1>Rs 289,000</h1>
-                    </div>
-                    <div class="pull-in">
-                      <canvas id="dailySalesChart"></canvas>
+                      <h1>Rs 72,000.00</h1>
+                      <h5 class="mt-4">Besto</h5>
+                      <div class="card-category mb-2">Rs 42,000.00</div>
+                      <h5>Delmo</h5>
+                      <div class="card-category mb-5">Rs 30,000.00</div>
                     </div>
                   </div>
                 </div><br />
                 <div class="card card-round mb-4">
                   <div class="card-body pb-0">
-                    <div class="h1 fw-bold float-end text-danger mt-1">+5%</div>
-                    <h5 class="mb-2">Rs 289,000</h5>
+                    <div class="h1 fw-bold float-end text-danger mt-1">+4%</div>
+                    <h5 class="mb-2">Rs 139,000.00</h5>
                     <p class="text-muted">Monthly Sales</p>
                     <div class="pull-in sparkline-fix">
                       <div id="lineChart"></div>
@@ -188,69 +187,5 @@
         </div>
       </div>
     </div>
-    <!--   Core JS Files   -->
-    <script src="assets/js/core/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/core/popper.min.js"></script>
-    <script src="assets/js/core/bootstrap.min.js"></script>
-
-    <!-- jQuery Scrollbar -->
-    <script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-
-    <!-- Chart JS -->
-    <script src="assets/js/plugin/chart.js/chart.min.js"></script>
-
-    <!-- jQuery Sparkline -->
-    <script src="assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
-
-    <!-- Chart Circle -->
-    <script src="assets/js/plugin/chart-circle/circles.min.js"></script>
-
-    <!-- Datatables -->
-    <script src="assets/js/plugin/datatables/datatables.min.js"></script>
-
-    <!-- Bootstrap Notify -->
-    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-
-    <!-- jQuery Vector Maps -->
-    <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
-    <script src="assets/js/plugin/jsvectormap/world.js"></script>
-
-    <!-- Sweet Alert -->
-    <script src="assets/js/plugin/sweetalert/sweetalert.min.js"></script>
-
-    <!-- Kaiadmin JS -->
-    <script src="assets/js/kaiadmin.min.js"></script>
-
-    <!-- Kaiadmin DEMO methods, don't include it in your project! -->
-    <script src="assets/js/setting-demo.js"></script>
-    <script src="assets/js/demo.js"></script>
-    <script>
-      $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
-        type: "line",
-        height: "70",
-        width: "100%",
-        lineWidth: "2",
-        lineColor: "#177dff",
-        fillColor: "rgba(23, 125, 255, 0.14)",
-      });
-
-      $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
-        type: "line",
-        height: "70",
-        width: "100%",
-        lineWidth: "2",
-        lineColor: "#f3545d",
-        fillColor: "rgba(243, 84, 93, .14)",
-      });
-
-      $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
-        type: "line",
-        height: "70",
-        width: "100%",
-        lineWidth: "2",
-        lineColor: "#ffa534",
-        fillColor: "rgba(255, 165, 52, .14)",
-      });
-    </script>
   </body>
 </html>
