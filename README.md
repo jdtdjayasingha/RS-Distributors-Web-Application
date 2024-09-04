@@ -1,5 +1,27 @@
 # RS Distributors Web Application
-<p>Designed and implemented a custom POS system tailored for a chicken supply chain, optimizing transaction processing and inventory management for multiple shop locations.</p>
+
+## Project Overview
+
+This custom-built POS system is tailored for a chicken supply chain, streamlining operations with distinct Admin and Seller roles.
+
+## Features
+
+### Admin Role
+- **Dashboard Management**: View key metrics like income, users, products, and shops.
+- **Product Management**: Add, edit, and lock product details to ensure pricing consistency.
+- **Shop & User Management**: Manage shops and users with secure access control.
+
+### Seller Role
+- **Shop Selection**: Sellers choose their shop, ensuring accurate sales data.
+- **Product Handling**: Enter product weight or quantity without altering prices.
+- **Billing**: Print bills seamlessly to expedite checkout.
+
+## Technical Stack
+
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap for a responsive UI.
+- **Backend**: C#, ASP.NET Core with Razor Pages for business logic.
+- **Database**: Microsoft SQL Server for secure data storage.
+
 <div>
  <img width=400 src="https://github.com/user-attachments/assets/c00d2c50-fcbf-49fe-96c5-337e8be747ea"/>
  <img width=400 src="https://github.com/user-attachments/assets/f4ca28b1-b5eb-458c-a384-cd17a31891e8"/>
@@ -19,3 +41,7 @@
  <img width=175 src="https://github.com/user-attachments/assets/bba161cc-3f1c-453a-a1b3-dd31568afe94"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  <img width=175 src="https://github.com/user-attachments/assets/a1ae224c-1101-428b-86b9-94f6c048fb64"/> 
 </div>
+
+## Conclusion
+
+Designed for security and efficiency, this POS system meets the specific needs of a chicken supply chain with user-friendly, modern web technologies.
